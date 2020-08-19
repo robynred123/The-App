@@ -5,8 +5,10 @@ import { MenuButton } from '../components/MenuButton'
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>Welcome!</Text>
-      <Text>Please select a screen to view</Text>
+      <View style={styles.textContainer}>
+        <Text style={styles.title}>Welcome!</Text>
+        <Text>Please select a screen to view</Text>
+      </View>
       <View style={styles.navigationButtons}>
         <MenuButton 
           title='About Me'
@@ -29,6 +31,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingBottom: 80
+  },
+  textContainer: {
+    alignItems: 'center',
+    paddingBottom: 80
+  },
+  title:{
+    fontSize: 35,
+    fontWeight: 'bold',
   }
 });
 

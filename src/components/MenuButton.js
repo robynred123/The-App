@@ -15,7 +15,7 @@ export const MenuButton = (props) => {
                 onPress={() => navigation.navigate(navigateTo)}
                 style={styles.button}
             >
-               <Text> {title} </Text> 
+               <Text style={styles.buttonText}> {title} </Text> 
             </TouchableOpacity>
         </View>
     )
@@ -31,6 +31,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         padding: 15,
-        borderRadius: 15
+        borderRadius: 15,
+    },
+    buttonText: {
+        fontSize: 15,
+        fontWeight: '700'
     }
 });
