@@ -13,7 +13,7 @@ const navigator = createStackNavigator(
   {
     initialRouteName: "Home",
     defaultNavigationOptions: {
-      title: "Robyn Bursnell"
+      title: "Robyn Bursnell - The App"
     }
   }
 );
