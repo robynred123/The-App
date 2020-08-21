@@ -2,29 +2,31 @@ import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 
 export const DataItem = (props) => {
-
-  const { point } = props;
+    
+    const { point } = props;
 
     return (
         <View style={styles.Container}>
-            <Text style={styles.textStyle}>
-                { point }
-            </Text>
+            <View style={styles.textWidth}>
+                <Text style={styles.textStyle}>
+                    { point }
+                </Text>
+            </View>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
+        
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-        borderWidth: 1,
         flexDirection: 'column',
+        flexWrap: 'wrap',
+    },
+    textWidth: {
+        width: '30%',
     },
     textStyle: {
-        textAlign: 'left',
         fontSize: 20,
     }
   });
