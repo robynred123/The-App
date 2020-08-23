@@ -9,7 +9,7 @@
         },
         {
             "key": 3,
-            "point": "Good knowledge of languages and frameworks used by the team, e.g. React"
+            "point": "Good knowledge of languages and frameworks used by the team, e.g. React, Node.js"
         },
         {
             "key": 4,
@@ -21,6 +21,6 @@
         },
         {
             "key": 6,
-            "point": "Almost 2 years development experience in Asda, having worked on a large scale application deployed to a number of stores across the country"
+            "point": "2 years development experience in Asda, having worked on a large scale application deployed to a number of stores across the country"
         }
     ]
