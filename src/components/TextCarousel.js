@@ -1,20 +1,40 @@
 import React from "react";
-import { ScrollView } from "react-native";
-import DataItem from "./DataItem";
+import { ScrollView, View, Text, StyleSheet, Dimensions } from "react-native";
+
+let screenWidth = Dimensions.get('window').width;
 
 export const TextCarousel = (props) => {
   const { data } = props;
 
     return (
-         <ScrollView 
+      <View>
+        <ScrollView 
           horizontal 
-          pagingEnabled 
-          showsHorizontalScrollIndicator={false}
-          overScrollMode='always'
+          pagingEnabled={true}
+          showsHorizontalScrollIndicator={true}
         >
-          {data.map((i) => {
-              return <DataItem key={i.key} point={i.point} />;
-          })}
+          {Object.keys(data).map((item, i) => (
+              <View key={data[item].key} style={styles.textContainer}> 
+                <Text style={styles.textStyle}> 
+                  {data[item].point} 
+                </Text> 
+              </View>
+          ))}
         </ScrollView> 
+      </View>
     );
 }; 
+
+const styles = StyleSheet.create({
+  textContainer: {
+    width: screenWidth,
+    height: 150,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row'
+  },
+  textStyle:{
+    textAlign: 'center',
+    fontSize: 18
+  }
+})

@@ -6,15 +6,16 @@ import { data } from '../data/data';
 const DeveloperScreen = () => {
   return (
     <ScrollView>
-    <View style={styles.container}>
+    <View>
+
       <Text style={styles.title}>What Can I Bring To Asda?</Text>
-    </View>
+    
       <TextCarousel 
         data={data} 
-        itemsPerInterval={1}
       />
-    
-    <View style={styles.container}>
+
+    </View>
+    <View>
       <Text style={styles.title}> Why Do I Want to Be A Developer?</Text>
       <Text style={styles.text}>
           Before beginning my apprenticeship I felt that I had reached a wall in my ability to improve in my previous job, and I was looking for a
@@ -34,22 +35,18 @@ const DeveloperScreen = () => {
 }
     
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    borderWidth: 2,
-    alignItems: 'center',
-  },
   title: {
     fontSize: 20,
     fontWeight: '700',
     justifyContent: 'center',
+    textAlign: 'center',
     padding: 5
   },
   text: {
-    marginHorizontal: 10,
-    padding: 5,
+    padding: 10,
     fontSize: 15,
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    textAlign: 'center'
   }
 });
 
