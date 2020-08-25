@@ -10,10 +10,10 @@ const AboutScreen = () => {
       <View style={styles.container}>
         <Text style={styles.title}>About Me</Text>
         <Image source={require('../../assets/about.jpg')} style={styles.image} />
-        <Text style={styles.text}>
+        <Text style={{...styles.text, padding: 10}}>
           My name is Robyn, I am an apprentice software engineer at Asda working towards my level 4 qualification.
         </Text>
-        <Text style={styles.text}>
+        <Text style={{...styles.text, padding: 10}}>
           I am most comfortable working on react and react-native applications, but I do have experience in Node.js, Java, and C#.
         </Text>
       </View>
@@ -30,16 +30,15 @@ const AboutScreen = () => {
         {interests.map((interest) => (
            <Text style={styles.list}>{<FontAwesomeIcon icon={faStar} fill='#f1c232' />} { interest } </Text>
         ))}
-      </View>
 
-      <View style={styles.link}>
-        <Text> 
-          For More Information, Visit My </Text>
+        <View style={styles.link}>
+          <Text style={styles.text}> For More Information, Visit My </Text>
           <TouchableOpacity onPress={() => Linking.openURL('https://rbursnell.netlify.app/')}>
-            <Text style={{...styles.text, color:'#b067d8'}}>
+            <Text style={{...styles.text, color: '#b067d8'}}>
               Website
             </Text>
           </TouchableOpacity>
+        </View>
       </View>
     </ScrollView>
   )
@@ -63,11 +62,9 @@ const styles = StyleSheet.create({
     margin: 10
   },
   text: {
-    marginHorizontal: 10,
-    padding: 5,
     fontSize: 15,
     flexWrap: 'wrap',
-    textAlign: 'center'
+    textAlign: 'center',
   },
   list: {
     textAlign: 'left',
@@ -75,8 +72,9 @@ const styles = StyleSheet.create({
     marginLeft: 10
   },
   link: {
-    alignItems: 'center',
     flexDirection: 'row',
+    paddingVertical: 20,
+    paddingHorizontal: 10
   }
 });
 
