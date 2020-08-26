@@ -13,10 +13,10 @@ export const TextCarousel = (props) => {
           pagingEnabled={true}
           showsHorizontalScrollIndicator={true}
         >
-          {Object.keys(data).map((item, i) => (
-              <View key={data[item].key} style={styles.textContainer}> 
+          {data.map((item, i) => (
+              <View key={item.key} style={styles.textContainer}> 
                 <Text style={styles.textStyle}> 
-                  {data[item].point} 
+                  {item.point} 
                 </Text> 
               </View>
           ))}

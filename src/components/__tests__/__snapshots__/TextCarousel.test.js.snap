@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextCarousel /> should render the TextCarousel with an array of data 1`] = `
+<View>
+  <ScrollViewMock
+    horizontal={true}
+    pagingEnabled={true}
+    showsHorizontalScrollIndicator={true}
+  >
+    <View
+      key="1"
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 150,
+          "justifyContent": "center",
+          "width": 750,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+        testing
+      </Text>
+    </View>
+    <View
+      key="2"
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 150,
+          "justifyContent": "center",
+          "width": 750,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+        12345
+      </Text>
+    </View>
+  </ScrollViewMock>
+</View>
+`;
+
+exports[`<TextCarousel /> should render the TextCarousel without crashing 1`] = `
+<View>
+  <ScrollViewMock
+    horizontal={true}
+    pagingEnabled={true}
+    showsHorizontalScrollIndicator={true}
+  >
+    <View
+      key="1"
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 150,
+          "justifyContent": "center",
+          "width": 750,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+        testing
+      </Text>
+    </View>
+    <View
+      key="2"
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 150,
+          "justifyContent": "center",
+          "width": 750,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 18,
+            "textAlign": "center",
+          }
+        }
+      >
+        12345
+      </Text>
+    </View>
+  </ScrollViewMock>
+</View>
+`;

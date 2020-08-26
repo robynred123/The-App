@@ -15,7 +15,7 @@ export const MenuButton = (props) => {
                 onPress={() => navigation.navigate(navigateTo)}
                 style={styles.button}
             >
-               <Text style={styles.buttonText}> {title} </Text> 
+               <Text style={styles.buttonText}>{title}</Text> 
             </TouchableOpacity>
         </View>
     )

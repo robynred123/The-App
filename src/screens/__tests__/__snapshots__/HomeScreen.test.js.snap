@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeScreen /> should render the HomeScreen with text 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+      "paddingBottom": 80,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "paddingBottom": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 35,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Welcome!
+    </Text>
+    <Text>
+      Please select a screen to view
+    </Text>
+  </View>
+  <View>
+    <MenuButton
+      navigateTo="About"
+      title="About Me"
+    />
+    <MenuButton
+      navigateTo="Developer"
+      title="Why Me? Why Asda?"
+    />
+  </View>
+</View>
+`;
+
+exports[`<HomeScreen /> should render the HomeScreen without crashing 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+      "paddingBottom": 80,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "paddingBottom": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 35,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Welcome!
+    </Text>
+    <Text>
+      Please select a screen to view
+    </Text>
+  </View>
+  <View>
+    <MenuButton
+      navigateTo="About"
+      title="About Me"
+    />
+    <MenuButton
+      navigateTo="Developer"
+      title="Why Me? Why Asda?"
+    />
+  </View>
+</View>
+`;

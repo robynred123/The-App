@@ -3,6 +3,8 @@
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
+    "test": "jest",
+    "testc": "jest --verbose --updateSnapshot --watch --coverage",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
@@ -26,7 +28,16 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
-    "babel-preset-expo": "~8.1.0"
+    "babel-preset-expo": "~8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "jest": "^26.4.2",
+    "jest-expo": "^38.0.2",
+    "react-test-renderer": "^16.13.1"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   },
   "private": true
 }

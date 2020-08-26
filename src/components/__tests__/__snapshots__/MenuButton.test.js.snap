@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuButton /> should render the MenuButton with a title of "test" 1`] = `
+<View
+  style={
+    Object {
+      "justifyContent": "space-around",
+      "padding": 10,
+    }
+  }
+>
+  <ForwardRef
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#b067d8",
+        "borderRadius": 15,
+        "justifyContent": "center",
+        "padding": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 15,
+          "fontWeight": "700",
+        }
+      }
+    >
+      test
+    </Text>
+  </ForwardRef>
+</View>
+`;
+
+exports[`<MenuButton /> should render the MenuButton without crashing 1`] = `
+<View
+  style={
+    Object {
+      "justifyContent": "space-around",
+      "padding": 10,
+    }
+  }
+>
+  <ForwardRef
+    onPress={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#b067d8",
+        "borderRadius": 15,
+        "justifyContent": "center",
+        "padding": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 15,
+          "fontWeight": "700",
+        }
+      }
+    />
+  </ForwardRef>
+</View>
+`;
