@@ -20,19 +20,19 @@ const AboutScreen = () => {
 
       <View style={{padding: 10}}>
         <Text style={styles.title}>Technologies and Skills I'm Interested In</Text>
-        {technologies.map((technology) => (
-           <Text style={styles.list}>{<FontAwesomeIcon icon={faStar} fill='#f1c232' />} { technology } </Text>
+        {technologies.map((technology, i) => (
+           <Text key={i} className={'technology'} style={styles.list}>{<FontAwesomeIcon icon={faStar} fill='#f1c232' />}{ technology }</Text>
         ))}
       </View>
 
       <View style={{padding: 10}}>
         <Text style={styles.title}>My Interests</Text>
-        {interests.map((interest) => (
-           <Text style={styles.list}>{<FontAwesomeIcon icon={faStar} fill='#f1c232' />} { interest } </Text>
+        {interests.map((interest, i) => (
+           <Text key={i} className={'interest'} style={styles.list}>{<FontAwesomeIcon icon={faStar} fill='#f1c232' />}{ interest }</Text>
         ))}
 
         <View style={styles.link}>
-          <Text style={styles.text}> For More Information, Visit My </Text>
+          <Text className={'website'} style={styles.text}> For More Information, Visit My </Text>
           <TouchableOpacity onPress={() => Linking.openURL('https://rbursnell.netlify.app/')}>
             <Text style={{...styles.text, color: '#b067d8'}}>
               Website

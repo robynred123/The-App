@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AboutScreen /> should render the AboutScreen without crashing 1`] = `
+<ScrollViewMock>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "padding": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+      About Me
+    </Text>
+    <Image
+      source={1}
+      style={
+        Object {
+          "height": 200,
+          "margin": 10,
+          "width": 300,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+          "padding": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      My name is Robyn, I am an apprentice software engineer at Asda working towards my level 4 qualification.
+    </Text>
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+          "padding": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      I am most comfortable working on react and react-native applications, but I do have experience in Node.js, Java, and C#.
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "padding": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+      Technologies and Skills I'm Interested In
+    </Text>
+    <Text
+      className="technology"
+      key="0"
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "marginLeft": 10,
+          "textAlign": "left",
+        }
+      }
+    >
+      <Component
+        fill="#f1c232"
+        icon="StarIcon"
+      />
+      advanced neural networks
+    </Text>
+    <Text
+      className="technology"
+      key="1"
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "marginLeft": 10,
+          "textAlign": "left",
+        }
+      }
+    >
+      <Component
+        fill="#f1c232"
+        icon="StarIcon"
+      />
+      integration layer development
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "padding": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+      My Interests
+    </Text>
+    <Text
+      className="interest"
+      key="0"
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "marginLeft": 10,
+          "textAlign": "left",
+        }
+      }
+    >
+      <Component
+        fill="#f1c232"
+        icon="StarIcon"
+      />
+      gardening
+    </Text>
+    <Text
+      className="interest"
+      key="1"
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "marginLeft": 10,
+          "textAlign": "left",
+        }
+      }
+    >
+      <Component
+        fill="#f1c232"
+        icon="StarIcon"
+      />
+      cross-country running
+    </Text>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "paddingHorizontal": 10,
+          "paddingVertical": 20,
+        }
+      }
+    >
+      <Text
+        className="website"
+        style={
+          Object {
+            "flexWrap": "wrap",
+            "fontSize": 15,
+            "textAlign": "center",
+          }
+        }
+      >
+         For More Information, Visit My 
+      </Text>
+      <ForwardRef
+        onPress={[Function]}
+      >
+        <Text
+          style={
+            Object {
+              "color": "#b067d8",
+              "flexWrap": "wrap",
+              "fontSize": 15,
+              "textAlign": "center",
+            }
+          }
+        >
+          Website
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</ScrollViewMock>
+`;
