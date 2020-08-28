@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DeveloperScreen /> should render the DeveloperScreen with text 1`] = `
+<ScrollViewMock>
+  <View>
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "padding": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+      What Can I Bring To Asda?
+    </Text>
+    <TextCarousel
+      data={
+        Array [
+          Object {
+            "key": 1,
+            "point": "Existing Knowledge of Products in Development",
+          },
+          Object {
+            "key": 2,
+            "point": "Already proven a good fit with the team",
+          },
+          Object {
+            "key": 3,
+            "point": "Good knowledge of languages and frameworks used by the team, e.g. React, Node.js",
+          },
+          Object {
+            "key": 4,
+            "point": "Eager to get involved, and to learn",
+          },
+          Object {
+            "key": 5,
+            "point": "Good problem solving skills",
+          },
+          Object {
+            "key": 6,
+            "point": "2 years development experience in Asda, having worked on a large scale application deployed to a number of stores across the country",
+          },
+        ]
+      }
+    />
+  </View>
+  <View>
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "padding": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+       Why Do I Want to Be A Developer?
+    </Text>
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+          "padding": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Before beginning my apprenticeship I felt that I had reached a wall in my ability to improve in my previous job, and I was looking for a position where I could continuously learn. At Asda I have been introduced to a lot of new experiences, and have been given the opportunity to continue to improve my skills, and learn about new technologies.
+    </Text>
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+          "padding": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      I want to continue to work as a developer to continue this learning and to be able to make applications that people will enjoy using. In addition I want to work towards encouraging other females to get into technology and specifically development, as I feel that when I was considering career options, it wasn't something that I was made aware of, despite my keen interest in technology.
+    </Text>
+  </View>
+</ScrollViewMock>
+`;
+
+exports[`<DeveloperScreen /> should render the DeveloperScreen with text 2`] = `
+<ScrollViewMock>
+  <View>
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "padding": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+      What Can I Bring To Asda?
+    </Text>
+    <TextCarousel
+      data={
+        Array [
+          Object {
+            "key": 1,
+            "point": "Existing Knowledge of Products in Development",
+          },
+          Object {
+            "key": 2,
+            "point": "Already proven a good fit with the team",
+          },
+          Object {
+            "key": 3,
+            "point": "Good knowledge of languages and frameworks used by the team, e.g. React, Node.js",
+          },
+          Object {
+            "key": 4,
+            "point": "Eager to get involved, and to learn",
+          },
+          Object {
+            "key": 5,
+            "point": "Good problem solving skills",
+          },
+          Object {
+            "key": 6,
+            "point": "2 years development experience in Asda, having worked on a large scale application deployed to a number of stores across the country",
+          },
+        ]
+      }
+    />
+  </View>
+  <View>
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "padding": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+       Why Do I Want to Be A Developer?
+    </Text>
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+          "padding": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Before beginning my apprenticeship I felt that I had reached a wall in my ability to improve in my previous job, and I was looking for a position where I could continuously learn. At Asda I have been introduced to a lot of new experiences, and have been given the opportunity to continue to improve my skills, and learn about new technologies.
+    </Text>
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+          "padding": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      I want to continue to work as a developer to continue this learning and to be able to make applications that people will enjoy using. In addition I want to work towards encouraging other females to get into technology and specifically development, as I feel that when I was considering career options, it wasn't something that I was made aware of, despite my keen interest in technology.
+    </Text>
+  </View>
+</ScrollViewMock>
+`;
+
+exports[`<DeveloperScreen /> should render the DeveloperScreen without crashing 1`] = `
+<ScrollViewMock>
+  <View>
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "padding": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+      What Can I Bring To Asda?
+    </Text>
+    <TextCarousel
+      data={
+        Array [
+          Object {
+            "key": 1,
+            "point": "Existing Knowledge of Products in Development",
+          },
+          Object {
+            "key": 2,
+            "point": "Already proven a good fit with the team",
+          },
+          Object {
+            "key": 3,
+            "point": "Good knowledge of languages and frameworks used by the team, e.g. React, Node.js",
+          },
+          Object {
+            "key": 4,
+            "point": "Eager to get involved, and to learn",
+          },
+          Object {
+            "key": 5,
+            "point": "Good problem solving skills",
+          },
+          Object {
+            "key": 6,
+            "point": "2 years development experience in Asda, having worked on a large scale application deployed to a number of stores across the country",
+          },
+        ]
+      }
+    />
+  </View>
+  <View>
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "padding": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+       Why Do I Want to Be A Developer?
+    </Text>
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+          "padding": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      Before beginning my apprenticeship I felt that I had reached a wall in my ability to improve in my previous job, and I was looking for a position where I could continuously learn. At Asda I have been introduced to a lot of new experiences, and have been given the opportunity to continue to improve my skills, and learn about new technologies.
+    </Text>
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+          "padding": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      I want to continue to work as a developer to continue this learning and to be able to make applications that people will enjoy using. In addition I want to work towards encouraging other females to get into technology and specifically development, as I feel that when I was considering career options, it wasn't something that I was made aware of, despite my keen interest in technology.
+    </Text>
+  </View>
+</ScrollViewMock>
+`;
