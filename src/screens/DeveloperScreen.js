@@ -16,7 +16,7 @@ const DeveloperScreen = () => {
 
     </View>
     <View>
-      <Text style={styles.title}> Why Do I Want to Be A Developer?</Text>
+      <Text style={styles.title}>Why Do I Want to Be A Developer?</Text>
       <Text style={styles.text}>
           Before beginning my apprenticeship I felt that I had reached a wall in my ability to improve in my previous job, and I was looking for a
           position where I could continuously learn. At Asda I have been introduced to a lot of new experiences, 
