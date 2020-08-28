@@ -26,7 +26,7 @@ jest.mock('../../data/data', () => ({
 }))
 
 describe('<AboutScreen />', () => {
-    const component = shallow(<AboutScreen onPress={onPress}/>)
+    const component = shallow(<AboutScreen />)
 
     it('should render the AboutScreen without crashing', () => {
         expect(component).toMatchSnapshot()
