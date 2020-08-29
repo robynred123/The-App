@@ -64,8 +64,9 @@ The project uses Prettier and ESlint to enforce a consistent code style.
 this can be checked by running
 
 ```
-npx eslint . 
+npx eslint .
 ```
+
 and
 
 ```
