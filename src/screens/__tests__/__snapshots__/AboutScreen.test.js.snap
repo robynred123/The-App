@@ -186,7 +186,9 @@ exports[`<AboutScreen /> should render the AboutScreen without crashing 1`] = `
           }
         }
       >
-         For More Information, Visit My 
+         
+        For More Information, Visit My
+         
       </Text>
       <ForwardRef
         onPress={[Function]}
