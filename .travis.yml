@@ -11,12 +11,12 @@ before_script:
   - npm install -g expo-cli
 script:
   - npm ci
-  - npm test
 jobs:
   include:
     - stage: deploy
       node_js: lts/*
       script:
+        - npm test
         - npm ci
         - npx expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
         - npx expo publish --non-interactive
