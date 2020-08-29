@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 import { MenuButton } from '../components/MenuButton'
 
 const HomeScreen = ({ navigation }) => {
@@ -10,19 +10,19 @@ const HomeScreen = ({ navigation }) => {
         <Text>Please select a screen to view</Text>
       </View>
       <View style={styles.navigationButtons}>
-        <MenuButton 
-          title='About Me'
-          navigateTo='About'
+        <MenuButton
+          title="About Me"
+          navigateTo="About"
           navigation={navigation}
         />
-        <MenuButton 
-          title='Why Me? Why Asda?'
-          navigateTo='Developer'
+        <MenuButton
+          title="Why Me? Why Asda?"
+          navigateTo="Developer"
           navigation={navigation}
         />
       </View>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingBottom: 80
   },
-  title:{
+  title: {
     fontSize: 35,
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   }
-});
+})
 
 export default HomeScreen

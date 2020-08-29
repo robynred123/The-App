@@ -16,6 +16,7 @@ jobs:
     - stage: deploy
       node_js: lts/*
       script:
+        - prettier --check .
         - npm test
         - npm ci
         - npx expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
