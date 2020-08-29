@@ -1,0 +1,8 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-unreachable": "error",
+    "brace-style": ["error", "stroustrup", { "allowSingleLine": true }]
+  }
+}
