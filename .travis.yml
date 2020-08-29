@@ -5,6 +5,7 @@ cache:
   directories:
     - ~/.npm
 before_script:
+  - npm install -g expo-cli
   - npm install
 script:
   - npm test
