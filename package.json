@@ -37,7 +37,9 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "private": true
 }
