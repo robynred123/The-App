@@ -44,3 +44,6 @@ for coverage:
 ```
 npm run testc
 ```
+
+## CI/CD
+This app has been set up to automatically build, run unit tests, and publish to expo on a commit, using Travis CI
