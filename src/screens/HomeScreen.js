@@ -20,6 +20,11 @@ const HomeScreen = ({ navigation }) => {
           navigateTo="Developer"
           navigation={navigation}
         />
+        <MenuButton
+          title="Contact Me"
+          navigateTo="Contact"
+          navigation={navigation}
+        />
       </View>
     </View>
   )
