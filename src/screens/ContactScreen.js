@@ -2,28 +2,49 @@ import React, { useState } from 'react'
 import {
   Text,
   View,
-  Image,
   TextInput,
   StyleSheet,
   TouchableOpacity,
   Alert
 } from 'react-native'
+import validator from 'validator'
 
 const ContactScreen = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [validationError, setValidationError] = useState(null)
 
   const handleOnSubmit = () => {
-    return Alert.alert(
+    validateValues(name, email)
+    if(validationError !== null) {
+      return (Alert.alert(
+        'Errors found',
+        {validationError},
+        [{ text: 'OK', onPress: () => console.log('OK Pressed') }]
+      ))
+    } else {
+      return Alert.alert(
       'Message Submitted',
       `Name: ${name}, Email: ${email}, Message: ${message}`,
       [{ text: 'OK', onPress: () => console.log('OK Pressed') }]
     ),
-    //Likely a better way to clear state
     setName(''),
     setEmail(''),
     setMessage('')
+    }
+  }
+
+  const validateValues = (name, email) => {
+    setValidationError(null)
+
+    if(!validator.isLength(name, [{min: 5, max: undefined}])){
+      console.log('bad name')
+      return setValidationError('Please Enter a Name')
+    } else if(!validator.isEmail(email) || !validator.isLength(email, [{min: 5, max: undefined}])) {
+      console.log('bad email')
+      return setValidationError('Please Enter a Valid Email')
+    } 
   }
 
   //TODO: Add styling, add validation, add unit tests
@@ -93,6 +114,14 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 15,
     flexWrap: 'wrap'
+  },
+  button: {
+    backgroundColor: '#AA7DC3',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 15,
+    paddingHorizontal: 25,
+    borderRadius: 15
   }
 })
 
