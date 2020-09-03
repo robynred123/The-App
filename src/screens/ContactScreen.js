@@ -46,8 +46,6 @@ const ContactScreen = () => {
     return true
   }
 
-  //TODO: Add styling, add validation, add unit tests
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Contact Me</Text>
