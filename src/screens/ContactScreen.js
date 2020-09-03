@@ -22,8 +22,7 @@ const ContactScreen = () => {
         return (
           Alert.alert(
             'Message Submitted',
-            `Name: ${name}, Email: ${email}, Message: ${message}`,
-            [{ text: 'OK', onPress: () => console.log('OK Pressed') }]
+            `Name: ${name}, Email: ${email}, Message: ${message}`
           ),
           setName(''),
           setEmail(''),
@@ -39,7 +38,8 @@ const ContactScreen = () => {
     if (!validator.isLength(name, { min: 5, max: undefined })) {
       setValidationError('Please Enter a Name')
       return false
-    } else if (!validator.isEmail(email)) {
+    } 
+    else if (!validator.isEmail(email)) {
       setValidationError('Please Enter a Valid Email')
       return false
     }
