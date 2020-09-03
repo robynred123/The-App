@@ -16,35 +16,34 @@ const ContactScreen = () => {
   const [validationError, setValidationError] = useState(null)
 
   const handleOnSubmit = () => {
-    validateValues(name, email)
-    if(validationError !== null) {
-      return (Alert.alert(
-        'Errors found',
-        {validationError},
-        [{ text: 'OK', onPress: () => console.log('OK Pressed') }]
-      ))
-    } else {
-      return Alert.alert(
-      'Message Submitted',
-      `Name: ${name}, Email: ${email}, Message: ${message}`,
-      [{ text: 'OK', onPress: () => console.log('OK Pressed') }]
-    ),
-    setName(''),
-    setEmail(''),
-    setMessage('')
+    let isValid = validateValues(name, email)
+    if (isValid) {
+      if (validationError === null) {
+        return (
+          Alert.alert(
+            'Message Submitted',
+            `Name: ${name}, Email: ${email}, Message: ${message}`,
+            [{ text: 'OK', onPress: () => console.log('OK Pressed') }]
+          ),
+          setName(''),
+          setEmail(''),
+          setMessage('')
+        )
+      }
     }
   }
 
   const validateValues = (name, email) => {
     setValidationError(null)
 
-    if(!validator.isLength(name, [{min: 5, max: undefined}])){
-      console.log('bad name')
-      return setValidationError('Please Enter a Name')
-    } else if(!validator.isEmail(email) || !validator.isLength(email, [{min: 5, max: undefined}])) {
-      console.log('bad email')
-      return setValidationError('Please Enter a Valid Email')
-    } 
+    if (!validator.isLength(name, { min: 5, max: undefined })) {
+      setValidationError('Please Enter a Name')
+      return false
+    } else if (!validator.isEmail(email)) {
+      setValidationError('Please Enter a Valid Email')
+      return false
+    }
+    return true
   }
 
   //TODO: Add styling, add validation, add unit tests
@@ -73,11 +72,11 @@ const ContactScreen = () => {
           maxLength={500}
           multiline={true}
         />
+        {validationError ? (
+          <Text style={styles.error}>{validationError}</Text>
+        ) : null}
         <View>
-          <TouchableOpacity
-            onPress={() => handleOnSubmit()}
-            style={styles.button}
-          >
+          <TouchableOpacity onPress={handleOnSubmit} style={styles.button}>
             <Text>Submit</Text>
           </TouchableOpacity>
         </View>
@@ -122,6 +121,11 @@ const styles = StyleSheet.create({
     padding: 15,
     paddingHorizontal: 25,
     borderRadius: 15
+  },
+  error: {
+    fontSize: 15,
+    flexWrap: 'wrap',
+    color: 'red'
   }
 })
 
