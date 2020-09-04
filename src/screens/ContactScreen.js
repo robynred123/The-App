@@ -38,8 +38,7 @@ const ContactScreen = () => {
     if (!validator.isLength(name, { min: 5, max: undefined })) {
       setValidationError('Please Enter a Name')
       return false
-    } 
-    else if (!validator.isEmail(email)) {
+    } else if (!validator.isEmail(email)) {
       setValidationError('Please Enter a Valid Email')
       return false
     }

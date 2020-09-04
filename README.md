@@ -72,7 +72,9 @@ and
 ```
 npx prettier --check .
 ```
+
 # Future Considerations
+
 <ul>
 <li> Improved & increased unit tests </li>
 <li> Update React-Navigation to latest version </li>

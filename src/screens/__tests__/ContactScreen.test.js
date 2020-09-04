@@ -6,15 +6,23 @@ import ContactScreen from '../ContactScreen'
 Enzyme.configure({ adapter: new Adapter() })
 
 describe('<ContactScreen />', () => {
-  const component = shallow(<ContactScreen  />)
+  const component = shallow(<ContactScreen />)
 
   it('should render the ContactScreen without crashing', () => {
     expect(component).toMatchSnapshot()
   })
 
   it('should render the ContactScreen with a title', () => {
-    expect(component.find('Text').first().children().text()).toEqual('Contact Me')
-    expect(component.find('Text').first().props().style).toEqual({"fontSize": 20, "fontWeight": "700", "justifyContent":"center", "padding": 5, "textAlign": "center"})
+    expect(component.find('Text').first().children().text()).toEqual(
+      'Contact Me'
+    )
+    expect(component.find('Text').first().props().style).toEqual({
+      fontSize: 20,
+      fontWeight: '700',
+      justifyContent: 'center',
+      padding: 5,
+      textAlign: 'center'
+    })
   })
 
   it('should render the ContactScreen with a name TextInput', () => {
