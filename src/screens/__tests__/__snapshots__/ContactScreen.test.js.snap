@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactScreen /> should render the ContactScreen without crashing 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 20,
+        "fontWeight": "700",
+        "justifyContent": "center",
+        "padding": 5,
+        "textAlign": "center",
+      }
+    }
+  >
+    Contact Me
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "flexDirection": "column",
+        "padding": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+        }
+      }
+    >
+      Name
+    </Text>
+    <Component
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "backgroundColor": "#D1D1D1",
+          "borderRadius": 10,
+          "marginBottom": 30,
+          "padding": 10,
+          "width": "80%",
+        }
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+        }
+      }
+    >
+      Email
+    </Text>
+    <Component
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "backgroundColor": "#D1D1D1",
+          "borderRadius": 10,
+          "marginBottom": 30,
+          "padding": 10,
+          "width": "80%",
+        }
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+          "fontSize": 15,
+        }
+      }
+    >
+      Message
+    </Text>
+    <Component
+      allowFontScaling={true}
+      maxLength={500}
+      multiline={true}
+      onChangeText={[Function]}
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "backgroundColor": "#D1D1D1",
+          "borderRadius": 10,
+          "marginBottom": 30,
+          "padding": 10,
+          "width": "80%",
+        }
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View>
+      <ForwardRef
+        onPress={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#AA7DC3",
+            "borderRadius": 15,
+            "justifyContent": "center",
+            "padding": 15,
+            "paddingHorizontal": 25,
+          }
+        }
+      >
+        <Text>
+          Submit
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;

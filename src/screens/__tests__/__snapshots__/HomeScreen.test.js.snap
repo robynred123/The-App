@@ -43,6 +43,10 @@ exports[`<HomeScreen /> should render the HomeScreen with text 1`] = `
       navigateTo="Developer"
       title="Why Me? Why Asda?"
     />
+    <MenuButton
+      navigateTo="Contact"
+      title="Contact Me"
+    />
   </View>
 </View>
 `;
@@ -89,6 +93,10 @@ exports[`<HomeScreen /> should render the HomeScreen without crashing 1`] = `
     <MenuButton
       navigateTo="Developer"
       title="Why Me? Why Asda?"
+    />
+    <MenuButton
+      navigateTo="Contact"
+      title="Contact Me"
     />
   </View>
 </View>
