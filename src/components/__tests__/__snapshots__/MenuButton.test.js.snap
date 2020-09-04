@@ -14,7 +14,7 @@ exports[`<MenuButton /> should render the MenuButton without crashing 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "#b067d8",
+        "backgroundColor": "#AA7DC3",
         "borderRadius": 15,
         "justifyContent": "center",
         "padding": 15,

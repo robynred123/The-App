@@ -47,4 +47,16 @@ describe('<HomeScreen />', () => {
       testProps.navigatation
     )
   })
+
+  it('should render the HomeScreen with an "Contact Me" button', () => {
+    expect(component.find('MenuButton').at(2).props().title).toEqual(
+      'Contact Me'
+    )
+    expect(component.find('MenuButton').at(2).props().navigateTo).toEqual(
+      'Contact'
+    )
+    expect(component.find('MenuButton').at(2).props().navigation).toEqual(
+      testProps.navigatation
+    )
+  })
 })
